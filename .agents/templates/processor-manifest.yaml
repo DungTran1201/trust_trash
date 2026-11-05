@@ -1,0 +1,23 @@
+id: document-extractor
+name: Document Extractor
+version: 0.1.0
+input:
+  resource_types: [document]
+  mime_types: [application/pdf]
+output:
+  artifact_types: [extracted_text, layout_json]
+  schema_version: "1.0"
+execution:
+  timeout_seconds: 120
+  memory_mb: 2048
+  gpu: optional
+  network: denied_by_default
+reproducibility:
+  deterministic: partial
+  model_version: required
+security:
+  mutates_source: false
+  handles_sensitive_data: true
+quality:
+  golden_dataset: required
+  minimum_thresholds: {}

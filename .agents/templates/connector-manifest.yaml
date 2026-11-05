@@ -1,0 +1,36 @@
+id: provider-resource
+name: Provider Resource Connector
+version: 0.1.0
+provider: provider-name
+provider_api_versions: []
+category: cloud | database | saas | web | browser | local | streaming
+resource_types: []
+capabilities:
+  connect: supported
+  health_check: supported
+  discover: supported
+  metadata: partial
+  search: unsupported
+  fetch: unsupported
+  query: unsupported
+  sync: unsupported
+  cdc: not_applicable
+  stream: not_applicable
+  permission_discovery: partial
+auth:
+  schemes: []
+  scopes: []
+  secret_reference_required: true
+sync:
+  modes: []
+  cursor_strategy: none
+limits:
+  concurrency: 1
+  timeout_seconds: 30
+  max_page_size: 100
+permissions:
+  model: provider_acl | workspace_only | partial | unsupported
+  refresh_strategy: on_sync
+compatibility:
+  trust_trash_sdk: ">=0.1,<0.2"
+  python: ">=3.12"

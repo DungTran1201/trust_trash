@@ -1,0 +1,25 @@
+query_id: qry_example
+query:
+  text: "customer data"
+  resource_types: []
+  filters: {}
+execution:
+  mode: hybrid
+  deadline_ms: 5000
+  max_concurrency: 8
+  max_results_per_source: 50
+sources:
+  - source_id: source-example
+    operation: search
+    mode: indexed
+    required_capability: search
+    timeout_ms: 2000
+    status: planned
+ranking:
+  lexical: true
+  semantic: optional
+  freshness: true
+response:
+  include_provenance: true
+  include_freshness: true
+  include_coverage: true
