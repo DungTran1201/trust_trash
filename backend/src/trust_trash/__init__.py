@@ -1,0 +1,1 @@
+"""Trust Trash backend package."""

@@ -1,0 +1,11 @@
+{
+  "event_id": "evt_example",
+  "event_type": "resource.index.requested.v1",
+  "occurred_at": "2026-01-01T00:00:00Z",
+  "correlation_id": "corr_example",
+  "payload": {
+    "resource_id": "res_example",
+    "source_id": "source_example",
+    "reason": "initial_sync"
+  }
+}

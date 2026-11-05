@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Trust Trash Companion (Starter)",
+  "version": "0.1.0",
+  "description": "User-initiated browser context connector for Trust Trash.",
+  "permissions": ["activeTab", "storage"],
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" }
+}
